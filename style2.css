@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#00C6CF, #068488);
+}
+nav{
+    background: linear-gradient( #068488 , #00C6CF);
+    display: flex;
+    justify-content: center;
+
+}
+ul{
+    list-style: none;
+    font-size: 3vh;
+    text-align: center;
+    padding: 4vh;
+    letter-spacing: 4px;
+}
+
+.click{
+    background: #FFFFFF;
+    animation: fadeIn ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.table-container1{
+    height: 50vh;
+}
+table{
+    width: min-content;
+    padding-bottom: 2vh;
+    color: black;
+    padding: 3vh;
+    height: min-content;
+}
+.table-container{
+    margin-bottom: 4vh;
+    margin-top: 10vh;
+    overflow: auto;
+    border-radius: 5px;
+    
+}
+tr, td {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 2vh;
+    padding-bottom: 1vh;
+    
+}
+th{
+    font-size: 3.5vh;
+    align-self: flex-start;
+    padding-bottom: 3vh;
+    font-weight: 700;
+}
+
+.button{
+    border-style: none;
+    padding: 1.5vh 5vh;
+    font-size: 1.7vh;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    border: solid 1px black ;
+}
+
+.button:hover{
+    transform: scale(0.95);
+    background-color: #068488 ;
+    color: white;
+}
+
+button:disabled{
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+      border-radius: 0 5px 5px 0;
+    background-color: #f1f1f1;
+  }
+
+  @keyframes fadeIn {
+    from{ 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
