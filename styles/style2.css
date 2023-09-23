@@ -28,8 +28,6 @@ ul{
 .click{
     background: #FFFFFF;
     animation: fadeIn ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 .table-container1{
